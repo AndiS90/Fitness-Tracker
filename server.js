@@ -23,7 +23,7 @@ app.use(require("./routes/homeRoutes.js"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker", {
     useNewUrlParser: true, // since MDB driver deprecated their connection string parser, this flag allows use of old parser
-    useFindAndModify: true, //If multiple docs match, choose the first one in the specified sort order as the object to manipulate.
+    useFindAndModify: false, //Set to false to make findOneAndUpdate() and findOneAndRemove() possible to use
     useUnifiedTopology: true, //opt in to using the MongoDB driver's new connection management engine. make Mongoose's default index build use createIndex() instead of ensureIndex() to avoid deprecation warnings
 
 
