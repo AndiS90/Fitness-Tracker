@@ -1,6 +1,5 @@
 const express = require("express");
-//to log responses to the console for easier debugging
-const logger = require("morgan");
+const logger = require("morgan"); //to log responses to the console for easier debugging
 const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000;
