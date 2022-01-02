@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const WorkoutSchema = new Schema({
-    date: {
+    day: {
         type: Date,
         default: Date.now,
     },
-    exercise: [{
+    exercises: [{
         type: {
             type: String,
             trim: true,

@@ -11,9 +11,6 @@ router.get("/api/workouts", (req, res) => {
                 },
             },
         }, ])
-        // .sort({
-        //     date: -1
-        // })
         .then((dbWO) => {
             res.json(dbWO);
         })
@@ -54,7 +51,8 @@ router.put('/api/workouts/:id', ({
     }).catch((err) => res.json(err));
 });
 
-//get route to /api/workouts/range that responds with the added field totalDuration that includes the sum of previous durations
+//get route to /api/workouts/range that responds with the added field totalDuration that includes the sum of previous 7 durations and total weight
+// including the sum of the last 7previous weights
 router.get('/api/workouts/range', (req, res) => {
     Workout.aggregate([{
         $addFields: {
@@ -66,7 +64,7 @@ router.get('/api/workouts/range', (req, res) => {
             }
         }
     }]).sort({
-        _id: -1
+        day: -1
     }).limit(7).then((dbWO) => {
         console.log(dbWO);
         res.json(dbWO);
