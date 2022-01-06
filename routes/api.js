@@ -74,16 +74,4 @@ router.get('/api/workouts/range', (req, res) => {
 });
 
 
-
-
-// //delete route at api/workouts that finds by the 
-// router.delete('/api/workouts', (req, res) => {
-//     Workout.findByIdAndDelete(req.body.params.id)
-//         .then(() => {
-//             res.json(true);
-//         }).catch((err) => {
-//             res.json(err);
-//         });
-// });
-
 module.exports = router;
