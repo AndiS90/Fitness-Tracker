@@ -44,9 +44,9 @@
 
   - [MongoDB $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/)
 
-  -[MongoDB $sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/)
+   -[MongoDB $sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/)
 
-  -[Mongoose Aggregate](https://mongoosejs.com/docs/api.html#aggregate_Aggregate)
+   -[Mongoose Aggregate](https://mongoosejs.com/docs/api.html#aggregate_Aggregate)
 
    <br>
   
