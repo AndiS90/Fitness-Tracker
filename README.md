@@ -22,7 +22,7 @@
 
    Click the following link to deploy:
 
- [Fitness-Tracker](https://murmuring-shelf-18488.herokuapp.com/)
+ [Fitness-Tracker](https://fitness-tracker-01111950-b96d6e3c656f.herokuapp.com/)
 
   <br>
   
